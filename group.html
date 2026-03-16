@@ -1,63 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Huajie Shao |Ph.D Student @ UIUC</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111713571-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-111713571-1');
+	</script>
+
+	<style>
+        /* This makes the container occupy 90% of the screen, reducing side margins */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 70% !important;
+            }
+        }
+    </style>
+
+	<!-- Show more content -->
+	<script type="text/javascript">
+		function toggle_vis(id) {
+	    // var e = document.getElementById(id);
+	    var e = document.getElementsByClassName(id);
+			var showText = document.getElementById("showText");
+			for (var i = 0; i < e.length; i++) {
+		    	if (e[i].style.display == "none") {
+		        	e[i].style.display = "inline";
+	    			showText.innerHTML = "[Show less]";
+		    	} else {
+		    		e[i].style.display = "none";
+		    		showText.innerHTML = "[Show more]";
+		    	}
+		    }
+	    }
+	</script>
+
+	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="shjstyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+  <link rel="stylesheet" href="https://yunzhuli.github.io/static/styles.css">
+	<!-- Custom styles for this template -->
+	<link href="files/jumbotron.css" rel="stylesheet">
+	<script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
 </head>
 
-<body class="bodys">
-<div class="menu">
-	<nav>
-		<ul>
-        <li><a href="index.html">Home </a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="publication.html">Publications</a></li>
-        <!-- <li><a href="course.html">Course</a></li> -->
-        <li><a href="group.html">Students</a></li>
-        <li><a href="resources.html">Resources</a></li>
-		</ul>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
+	    <div class="container">
+		<a class="navbar-brand" href="index.html#Home">Huajie Shao</a>
+
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<!-- <a class="nav-link" href="index.html#Home">Home</a> -->
+					<a class="nav-link" href="index.html#Home" style="color: #ffffff;">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="group.html#Group" style="color: #ffffff;">Group</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html#Talks" style="color: #ffffff;">News</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="publication.html#Publications" style="color: #ffffff;" >Publications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html#Honors" style="color: #ffffff;" >Honors</a>
+				</li>
+			</ul>
+		</div>
+	    </div>
 	</nav>
-</div>
-<div class="content">
-<!-- group students -->
-<h2>PhD Students</h2>
-<ul class="people">
-<li>Yuchen Wang (MS from Shanghai Jiaotong University) </li>
-<!-- <li>Enze Xu (BS from Peking University) </li> -->
-<li>Xiaochang Li (MS from East China Normal University) </li>
-<!-- <li>Chen Qian (MS from UVA)</li> -->
-<li>Zhenyu Zong (BS from Zhejiang University and UIUC) </li>
-<li>Viet Duong (BS and MS from Univ of Rochester)</li>
-<li>Jiangtao Kong (MS from WM)</li>
-</ul>
 
-<!-- current students -->
-<h2>Current Intern Students</h2>
-<ul class="people">
-<li>Jiaqui Qi (William & Mary) </li>
-<!-- <li>Xieting Chu (Zhejiang University, incoming PhD at Gatech)</li> -->
-</ul>
+	<!-- students -->
+	<div class="container" style="padding-top: 10px; font-size: 18px">
+		<div class="row">
+		<br>
 
-<!-- intern students -->
-<h2>Past Intern</h2>
-<ul class="people">
-<li>Xieting Chu (Zhejiang University, PhD at Gatech)</li>
-<li>Hongjue Zhao (Zhejiang University, PhD at UIUC) </li>
-<li>Clare Heibaugh (PhD at  University of Cambridge) [ICLR  2023]</li>
-<li>Emilio Luz-Ricca (PhD at  University of Cambridge) [ICLR  2023]</li>
-<li>Yizhuo Chen (currently PhD at UIUC) [CVPR 2022]</li>
-<li>Haohong Lin (currently PhD at CMU) [CVPR 2022]</li>
-<li>Tianrui Liu (currently PhD at UCSD)</li>
-<li>Zhenzhou Yang (currently Master at UIUC)</li>
-<li>Zecheng Zhang (Master at Stanford) [WWW 2021]</li>
-<li>Jiahao Wu (Master at CMU) [WWW 2021]</li>
-<li>Andong Jing (currently Master at CMU)</li>
-<li>Dachun Sun (currently PhD at UIUC) [ICML 2021, WWW 2021, TPAMI 2022]</li>
-<li>Lanxin Liu (currently Master at UCSD)</li>
-</ul>
-</div>
+			<style>
+  				.students-row {
+    				display: flex;
+				    flex-wrap: nowrap;        /* single line */
+				    gap: 30px;                /* spacing between cards */
+				    overflow-x: auto;         /* scroll on small screens */
+				    margin-bottom: 40px;
+				}
+			  	.students-row .student {
+			    	flex: 0 0 15%;       /* 100% / 7 */
+			    	max-width: 15%;
+			    	text-align: center;
+			  	}
+				.students-row .student img {
+				    width: 100%;
+				    height: auto;
+				    border: 1px solid black;
+				    border-radius: 6px;       /* similar to .img-rounded */
+				}
+			</style>
+			
+			<li>
+			  	<b>PhD Students</b><br><br>
+			  	<div class="students-row">
+				    <div class="student">
+				      	<img src="files/students/xxx.jpeg" alt="Photo">
+				      	<!-- <br><a href="xxx" target="_blank">Xiaochang Li</a> -->
+				      	<br><a href="xxx" target="_blank"><span style="white-space: nowrap;">Xiaochang Li</span></a><br>
+				    </div>
+				    <div class="student">
+				      	<img src="files/students/xxx.jpg" alt="Photo">
+				      	<br><a href="xxx" target="_blank"><span style="white-space: nowrap;">Jiangtao Kong</span></a><br>
+				      	<!-- <small>(w/ <a href="https://shenlong.web.illinois.edu/" target="_blank">Shenlong Wang</a>)</small> -->
+				    </div>
+				    <div class="student">
+					      <img src="files/students/xxx.jpeg" alt="Photo">
+					      <br><a href="xxx" target="_blank"><span style="white-space: nowrap;">Viet Duong</span></a><br>
+					      <!-- <small>(w/ <a href="https://slazebni.cs.illinois.edu/" target="_blank">Svetlana Lazebnik</a>)</small> -->
+				    </div>
+				    <div class="student">
+					      <img src="files/students/xx.jpeg" alt="Photo">
+					      <br><a href="xxx" target="_blank"><span style="white-space: nowrap;">Zhenyu Zong</span></a><br>
+					      <!-- <small>(w/ <a href="https://tonydear.com/" target="_blank">Tony Dear</a>)</small> -->
+				    </div>
+				    <div class="student">
+					      <img src="files/students/xxx.jpg" alt="Photo">
+					      <br><a href="xxx" target="_blank"><span style="white-space: nowrap;">Yuchen Wang</span></a><br>
+				    </div>
+				    <!-- <div class="student">
+					      <img src="files/students/xxx.jpeg" alt="Photo">
+					      <br><a href="https://www.linkedin.com/in/zachwitz/" target="_blank">Zach Witzel</a>
+				    </div>
+				    <div class="student">
+					      <img src="files/students/xxx.jpg" alt="Photo">
+					      <br><a href="https://kywind.github.io/" target="_blank">Kaifeng Zhang</a>
+				    </div> -->
+
+			  	</div>
+			</li>
+
+			<br><br>
+
+			<!-- <hr style="margin-top: 30px; margin-bottom: 30px; border-top: 1px solid #eeeeee;"> -->
+			<!-- <li>
+				<b>Master's and Undergraduate Students</b>
+				<div class="row">
+					<div class="col-md-6", style="padding-right: 0px">
+						<ul>
+							<li><a href="https://yfang.info/" target="_blank">Yuan Fang</a> <small>(Master)</small></li>
+							<li><a href="https://www.linkedin.com/in/shuo-sha-b07527293/" target="_blank">Shuo (Chris) Sha</a> <small>(CS Undergrad)</small></li>
+							<li><a href="https://tna001-ai.github.io/" target="_blank">Naian Tao</a> <small>(ME Master)</small></li>
+						</ul>
+					</div>
+					<div class="col-md-6", style="padding-right: 0px">
+						<ul>
+							<li><a href="https://www.linkedin.com/in/bufan-zhao-387a76214/" target="_blank">Bufan (Brian) Zhao</a> <small>(CS Undergrad)</small></li>
+							<li><a href="https://www.linkedin.com/in/yolanda-xinyue-zhu-1526b3276/" target="_blank">Xinyue (Yolanda) Zhu</a> <small>(CS Undergrad)</small></li>
+						</ul>
+					</div>
+				</div>
+			</li> -->
+
+			<!-- graduated students -->
+			<!-- <hr style="margin-top: 30px; margin-bottom: 30px; border-top: 1px solid #eeeeee;"> -->
+
+	        <!-- <div class="w-100"> -->
+	           <!--  <li>
+	                <b>Ph.D. Alumni</b>
+	                <ul>
+	                    <li><a href="https://hhlin.info/" target="_blank">Haohong Lin</a> <small>(Undergrad; now at CMU)</small></li>
+	                    <li><a href="https://scholar.google.com/citations?user=OoBQWBUAAAAJ&hl=en" target="_blank">Hongjue Zhao</a> <small>( Undergrad; now at UIUC)</small></li>
+	                    <li><a href="https://www.wpi.edu/people/faculty/dsun4" target="_blank">Dachun Sun</a> <small>(Undergrad; now at UIUC PhD)</small></li>
+	                    <li><a href="https://scholar.google.com/citations?user=-EAXQR8AAAAJ&hl=en" target="_blank">Clare Heinbaugh </a> <small>(Undergrad; now PhD at University of Cambridge)</small></li>
+	                    <li><a href="https://www.linkedin.com/in/yolanda-xinyue-zhu-1526b3276/" target="_blank">Xinyue (Yolanda) Zhu</a> <small>(CS Undergrad)</small></li> -->
+	                <!-- </ul> -->
+	            <!-- </li> -->
+	        <!-- </div> -->
+
+
+	        <div class="w-100">
+	            <li>
+	                <b>Intern Students</b>
+	                <ul>
+	                    <li><a href="https://hhlin.info/" target="_blank">Haohong Lin</a> <small>(Undergrad; now at CMU)</small></li>
+	                    <li><a href="https://scholar.google.com/citations?user=OoBQWBUAAAAJ&hl=en" target="_blank">Hongjue Zhao</a> <small>( Undergrad; now at UIUC)</small></li>
+	                    <li><a href="https://www.wpi.edu/people/faculty/dsun4" target="_blank">Dachun Sun</a> <small>(Undergrad; now at UIUC PhD)</small></li>
+	                    <li><a href="https://scholar.google.com/citations?user=-EAXQR8AAAAJ&hl=en" target="_blank">Clare Heinbaugh </a> <small>(Undergrad; now PhD at University of Cambridge)</small></li>
+	                    <!-- <li><a href="https://www.linkedin.com/in/yolanda-xinyue-zhu-1526b3276/" target="_blank">Xinyue (Yolanda) Zhu</a> <small>(CS Undergrad)</small></li> -->
+	                </ul>
+	            </li>
+	        </div>
+	</div>
+
 
 </body>
 
+
 </html>
+

@@ -1,152 +1,391 @@
-<!doctype html>
-<html>
-<head><meta charset="utf-8">
-	<title>Huajie (Jay) Shao|Assistant Professor @ WM</title>
-	<link href="shjstyle.css?v=0.001" rel="stylesheet" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111713571-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-111713571-1');
+	</script>
+
+	<style>
+        /* This makes the container occupy 90% of the screen, reducing side margins */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 70% !important;
+            }
+        }
+    </style>
+
+	<!-- Show more content -->
+	<script type="text/javascript">
+		function toggle_vis(id) {
+	    // var e = document.getElementById(id);
+	    var e = document.getElementsByClassName(id);
+			var showText = document.getElementById("showText");
+			for (var i = 0; i < e.length; i++) {
+		    	if (e[i].style.display == "none") {
+		        	e[i].style.display = "inline";
+	    			showText.innerHTML = "[Show less]";
+		    	} else {
+		    		e[i].style.display = "none";
+		    		showText.innerHTML = "[Show more]";
+		    	}
+		    }
+	    }
+	</script>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+  <link rel="stylesheet" href="https://yunzhuli.github.io/static/styles.css">
+	<!-- Custom styles for this template -->
+	<link href="files/jumbotron.css" rel="stylesheet">
+	<script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
 </head>
 
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
+<title>Huajie Shao</title>
 
-<body class="bodys">
-<div class="menu">
-<nav>
-<ul>
-	<li><a href="index.html">Home </a></li>
-	<li><a href="project.html">Projects</a></li>
-	<li><a href="publication.html">Publications</a></li>
-	<!-- <li><a href="course.html">Course</a></li> -->
-    <li><a href="group.html">Students</a></li>
-    <li><a href="resources.html">Resources</a></li>
-</ul>
-</nav>
-</div>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
+	    <div class="container">
+		<a class="navbar-brand" href="index.html#Home">Huajie Shao</a>
 
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<!-- <a class="nav-link" href="index.html#Home">Home</a> -->
+					<a class="nav-link" href="index.html#Home" style="color: #ffffff;">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="group.html#Group" style="color: #ffffff;">Group</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html#Talks" style="color: #ffffff;">News</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="publication.html#Publications" style="color: #ffffff;" >Publications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html#Honors" style="color: #ffffff;" >Honors</a>
+				</li>
+			</ul>
+		</div>
+	    </div>
+	</nav>
 
-<div class="name"><img alt="Huajie (Jay) Shao" src="image/huajie.jpg" />
-<div class="intro">
-<h1>Huajie Shao </h1>
+	<div class="container" style="padding-top: 20px; font-size: 17px">
+		<div class="row">
+			<div class="col-md-3", style="padding-right: 40px">
+				<br>
+				<img class="img-responsive img-rounded" src="files/huajie.jpg" alt="Photo" style="width: 100%; border:1px solid black"><br>
+			</div>
 
-<h2><b>Assistant Professor @ William and Mary</b></h2>
+			<div class="col-md-9">
+			<br>
+			<p><font style="font-size: 24px"><b>Huajie Shao</b></font></p>
 
-<h3>I am a tenure-track assistant professor in the Department of Computer Science at William and Mary. Before, I recevied Ph.D. degree in Computer Science from University of Illinois Urbana Champaign (UIUC), where I was supervised by Professor Tarek Abdelzaher who is an ACM/IEEE Fellow. My research interests focus on Physics-informed Machine Learning, AI for Healthcare, Learning-based Cyber-Physical Systems, and Foundtion Models for Robotics</h3>
+			<p>I am an Assistant Professor of <a href="https://www.wm.edu/as/computerscience/" target="_blank">Computer Science</a> at <a href="https://www.wm.edu/" target="_blank">William & Mary</a>.
+			</p>
 
-<h3>Email: hshao [at] wm [dot] edu</h3>
-</div>
-</div>
+			I received my Ph.D. from the Computer Science Department at  <a href="https://illinois.edu/" target="_blank">University of Illinois at Urbana Champaign (UIUC)</a>, where I was advised by <a href="https://abdelzaher.cs.illinois.edu/" target="_blank"> Tarek Abdelzaher (ACM/IEEE Fellow)</a>. My research interests focus on Physical AI, World Models, and Interpretable LLM/AI.
+			</p>
 
+			<p>
+			<a target="_blank" href="https://scholar.google.com/citations?user=5-D7ZLsAAAAJ&hl=en"><font color="black"><i class="ai ai-google-scholar ai-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+			<a target="_blank" href="https://github.com/HuajieShao"><font color="black"><i class="fab fa-github fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+			<a target="_blank" href="https://x.com/HuajieShaoML"><font color="black"><i class="fab fa-twitter fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+			hshao [at] wm (dot) edu
+			</p>
 
-<div class="content">
+			</div>
+		</div>
+	</div><br><br>
 
-<h2>Prospective PhD Students and Visiting Scholars</h2>
-<ul class="publication">
-I am always looking for self-motivated PhD and intern students.  If you are interested in working with me, please fill out the <a href="https://forms.gle/UTSV9NBGMFUKHnCX7">Google Form.</a>
-</ul>
+  
+  <!-- News -->
+	<div class="container">
+		<h3 id="Group" style="padding-top: 80px; margin-top: -80px;">Physical AI Lab (PAI Lab)</h3>
+		<ul>
+			<li>
+				At <b><font color="firebrick">PAI Lab</font></b>, we work at the intersection of machine learning, control theory, and embodied AI systems, such as robotics, autonomous cars, and drones. Specifically, we focus on <b><font color="firebrick">Robot World Models and Vision Language Action Models</font></b> and aim to significantly enhance their reliability, interpretability, and generalizability, particularly through the following three directions.
+				<ul>
+					<li><font color="firebrick"><b>Trajectory World Model:</b></font> Develop a physics-informed trajectory world model for diverse robotics prediction and control.</li>
+					<li><font color="firebrick"><b>Safe Embodied AI:</b></font> Enable the safety of LLM-based embodied AI systems in the wild.</li>
+					<li><font color="firebrick"><b>Interpretable LLMs/ML:</b></font> Develop concept-based interpretable LLMs/ML.
+				</ul>
+			</li>
+			<li>
+				<b>Prospective Students:</b> I'm looking for self-motivated students passionate about advancing the frontiers of foundation models and world models for autonomous systems.
+				<ul>
+					<li><b>PhD Applicants:</b> If you are interested in working with me, please fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9ipc8mNZDjdrJyz4hHOTpfI68AWuMhRNeS_HaTEcdORFLig/viewform" target="_blank">Google Form</a> before submitting your application. In addition, please mention my name in your statement of research.</li>
+					<li><b>Intern Students:</b> Please reach out to me directly via email, attaching your CV.
+				</ul>
+			</li>
 
-<!-- edu -->
-<h2>Education</h2>
-
-<ul class="edu">
-	<li><strong>Ph.D. Degree:</strong> Computer Science, University of Illinois at Urbana-Champaign, USA. (Sep. 2015 - Aug. 2021)</li>
-	<li><strong>Master Degree:</strong> Control Engineering (EE), Zhejiang University, Hangzhou, China. (Sep. 2011 - Mar. 2014)</li>
-	<li><strong>Bachelor Degree:</strong> Automation (EE), Jiangnan University, China. (Aug. 2007 - Jun. 2011)</li>
-</ul>
-<!-- news -->
-
-<!-- <h2 class="news">News</h2> -->
-
-<!-- <ul class="news_list"> -->
-  <!-- <li>[08/2024] Our KDD paper received the Best Paper Award!</li> -->
-  <!-- <li>[06/2024] Our CHASE paper received the Best Paper Award!</li> -->
-  <!-- <li>[05/2024] One paper got accepted by KDD. Congrats to my student Viet!</li> -->
-  <!-- <li>[05/2024] One paper got accepted by ICML. Congrats to Yudong!</li> -->
-  <!-- <li>[03/2024] One paper got accepted by ICLR workshop on AI4DiffEqu.</li> -->
-  <!-- <li>[05/2023] Congrats to intern students Clare and Emilio got an fully funded offer from The University of Cambridge! I am proud of you!</li> -->
-  <!-- <li>[02/2023]: One paper got accepted by CVPR 2023!!! Congrats to intern students Yizhuo Chen</li> -->
-  <!-- <li>[01/2023]: One paper got accepted by ICLR 2023!!! Congrats to undergraduate students Clare and Emilio</li> -->
-    <!-- <li>[04/2022]: One paper got accepted by SIGIR 2022!!!</li> -->
-    <!-- <li>[03/2022]: One paper got accepted by CVPR 2022!!!</li> -->
-    <!-- <li>[09/2021]: I accepted the invitation to serve as PC for The Web Conference 2022 and ICLR 2022</li> -->
-    <!-- <li>[01/2021]: Our paper &quot; Controllable and diverse text generation in E-commerce &quot;is accepted by the Web Conference (WWW)2021! The model is currently DEPLOYED in Taobao E-commerce platform.</li> -->
-    <!-- <li>[08/2020]: Our paper received best paper award at SenSys 2020!!!</li> -->
-<!-- </ul> -->
-
-
-
-<!-- best paper awards -->
-<h2>Awards and Honors</h2>
-<ul class="publication">
-<li>IEEE/ACM CHASE Best Paper Award, 2025</li>
-<li>KDD Best Paper Award, 2024</li>
-<li>IEEE/ACM CHASE Best Paper Award, 2024</li>
-<li>IEEE/ACM SenSys 2020 Best Paper Award</li>
-<li>Fusion 2019 Student Paper Award</li>
-<li>UbiComp 2018 Distinguished Paper Award</li>
-<li>ICCPS 2017 Best Paper Award</li>
-</ul>
-
-<h2>Academic Services</h2>
-
-<ul class="publication">
-    <li>Program Comittee for WWW2022 and ICLR2022</li>
-	<li>Program Comittee for AAAI2021 and WWW2021</li>
-	<li>Reviewer for IEEE Sensor Journal, IEEE GLOBECOM, IEEE TPDS, IEEE Trans. on Mobile Computing</li>
-</ul>
-
-<h2 id="tips2">Contact</h2>
-
-<ul class="publication"><!-- <li>Tel: +1 240-743-0323</li> -->
-	<li>Email: hshao [at] wm [dot] edu</li>
-</ul>
+		</ul>
+	</div><br>
 
 
-<h2>Top Conferences Deadline</h2>
-<table style="width:70%">
-    <tr>
-    <td>Conference Names</td>
-    <td>Due Date</td>
-    <td>Website Link</td>
-  </tr>
-  <tr>
-    <td>The Web Conference (WWW)</td>
-    <td>Oct 12, 2024</td>
-    <td>https://www2022.thewebconf.org/</td>
-  </tr>
-  <tr>
-    <td>ICLR</td>
-    <td>Sep 29, 2023</td>
-    <td>https://iclr.cc/</td>
-  </tr>
-  <tr>
-    <td>CVPR</td>
-    <td>Nov 17, 2023</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>ACL</td>
-    <td> Nov 15, 2021</td>
-    <td></td>
-  </tr>
-<tr>
-      <td>ICML</td>
-      <td>Jan 20/27, 2022</td>
-      <td><a href="https://icml.cc/Conferences/2022/CallForPapers"style="text-decoration:none">ICML 2022 Link</a></td>
-  </tr>
-  <tr>
-      <td>KDD</td>
-      <td>Feb 10th, 2022</td>
-      <td><a href="https://kdd.org/kdd2022/cfpResearch.html"style="text-decoration:none">KDD 2022 Link</a></td>
-  </tr>
-  <tr>
-      <td>NeurIPs</td>
-      <td>May 21/28, 2021</td>
-      <td><a href="https://nips.cc/Conferences/FutureMeetings"style="text-decoration:none"> NeurIPs 2021 Link</a></td>
-  </tr>
-</table> 
-</div>
+<!-- Awards -->
+	<div class="container">
+		<h3 id="Honors" style="padding-top: 80px; margin-top: -80px;">Selected Honors</h3>
+		<ul>
+			<li>IEEE/ACM CHASE Best Paper Award, 2025</li>
+			<li>KDD Best Paper Award, 2024</li>
+			<li>IEEE/ACM CHASE Best Paper Award, 2024</li>
+			<li>IEEE/ACM SenSys 2020 Best Paper Award</li>
+			<li>Fusion 2019 Student Paper Award</li>
+			<li>UbiComp 2018 Distinguished Paper Award</li>
+			<li>ICCPS 2017 Best Paper Award</li>
+			<!-- <li>Finalist, Best Paper/Best Student Paper Awards, Conference on Robot Learning (CoRL) 2023 <a href="https://www.corl2023.org/awards" target="_blank"><small>[Link]</small></a></li> -->
+			<!-- <li>First Place Recipient, Ernst A. Guillemin Master's Thesis Award in Artificial Intelligence and Decision Making at MIT, 2021 <a href="https://www.eecs.mit.edu/2021-eecs-awards/" target="_blank"><small>[Link]</small></a></li> -->
+			<!-- <li>Finalist, Facebook Fellowship, 2021 <a href="https://research.fb.com/blog/2021/04/announcing-the-recipients-of-the-2021-facebook-fellowship-awards/" target="_blank"><small>[Link]</small></a></li> -->
+			<!-- <li>Finalist, NVIDIA Graduate Fellowship, 2019, 2020, 2021 <a href="https://www.nvidia.com/en-us/research/graduate-fellowships/" target="_blank"><small>[Link]</small></a></li> -->
+			<!-- <li>Outstanding Reviewer, ICCV 2021 <a href="http://iccv2021.thecvf.com/outstanding-reviewers" target="_blank"><small>[Link]</small></a></li> -->
+			<!-- <li>Adobe Research Fellowship, 2020 <a href="https://adoberesearch.ctlprojects.com/fellowship/previous-fellowship-award-winners/" target="_blank"><small>[Link]</small></a></li> -->
+			<!-- <li>Outstanding Undergraduate Thesis Award, EECS Dept., Peking Univ. (10 in 400)</li> -->
+		</ul>
+	</div><br><br>
+
+
+	<!-- Talks -->
+	<div class="container">
+		<h3 id="Talks" style="padding-top: 80px; margin-top: -80px;">
+			Latest News
+		</h3>
+		
+		<!-- <hr>
+		<div class="row">
+			<div class="col-md-4">
+    			<b>Structured World Models for Manipulation</b><br>
+    			[2025/05] <b>Invited Talk, <a href="https://deformable-workshop.github.io/icra2025/" target="_blank">ICRA 2025 Workshop</a></b><br>
+    			<iframe src="https://www.youtube.com/embed/Mn4sc1hZCAk" width="360" height="200" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  		  	</div>
+  		  	<div class="col-md-4">
+    	    	<b>Foundation Models for Robotic Manipulation</b><br>
+    	    	[2025/04] <b>Invited Talk, <a href="https://events.comp.nus.edu.sg/view/24102" target="_blank">NUS Robotics Sem.</a></b><br>
+   		    	<iframe src="https://www.youtube.com/embed/wGwHht1o0M0" width="360" height="200" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  		  	</div>
+  		  	<div class="col-md-4">
+    	    	<b>Towards General Robotic Intelligence</b><br>
+    	    	[2025/03] <b>Invited Talk, <a href="https://www.engineering.columbia.edu/about/news/ai-here-what-lies-ahead" target="_blank">Columbia AI Summit</a></b><br>
+   		    	<iframe src="https://www.youtube.com/embed/R1BlRgZqw3Y?start=2573" width="360" height="200" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  		  	</div>
+		</div>
+		<hr> -->
+	
+
+	<!-- talks -->
+		<ul>
+			<li>[2025/6] Our IEEE/ACM conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE) paper received the <b><font color="firebrick">Best Paper Award</font></b> in 2025!</li>
+			 <li>[08/2024] Our KDD paper received the <b><font color="firebrick">Best Paper Award</font></b> in 2024!</li>
+  			<li>[06/2024] Our CHASE paper received the <b><font color="firebrick">Best Paper Award</font></b> in 2024!</li>
+			<!-- <li>[2025/11] Guest Lecture at <b><a href="https://antonilo.github.io/physical_intelligence_fl25/" target="_blank">Physical Intelligence</a></b> at <b>UPenn</b></li> -->
+			<!-- <li>[2025/10] Invited Talk at IROS 2025 Workshop on Advanced Haptic Sensors and Devices for Healthcare Robots</li> -->
+			<!-- <li>[2025/10] Invited Talk at <b> ICCV 2025 Workshop on <a href="https://opendrivelab.com/iccv2025/workshop/" target="_blank">Learning to See: Advancing Spatial Understanding for Embodied Intelligence</a></b></li>
+			<li>[2025/10] Invited Talk at <b> ICCV 2025 Tutorial on <a href="https://iccv.thecvf.com/virtual/2025/tutorial/2856" target="_blank">Foundation Models Meet Embodied Agents</a></b></li>
+			<li>[2025/10] Invited Talk at <b> Georgia Tech <a href="https://research.gatech.edu/robotics/irim-seminar-series" target="_blank">IRIM Robotics Seminar</a></b></li>
+			<li>[2025/09] Invited Talk at <b> CoRL 2025 Workshop on <a href="https://robot-world-modeling.github.io/" target="_blank">Robotics World Modeling</a></b></li> -->
+			<!-- <li>[2025/09] Invited Talk at <b> CoRL 2025 Workshop on <a href="https://rino-workshop.github.io/" target="_blank">Beyond Rigid Worlds: Representing and Interacting with Non-Rigid Objects</a></b></li>
+			<li>[2025/09] Invited Talk at <b> <a href="https://www.tri.global/" target="_blank">Toyota Research Institute (TRI)</a>'s ML Speaker Series</b></li>
+			<li>[2025/06] Invited Talk at <b> RSS 2025 Workshop on <a href="https://sites.google.com/mit.edu/multimodal-robotics" target="_blank">MultiSensory Robotics with MultiModal Capabilities</a></b></li>
+			<li>[2025/06] Invited Talk at <b> RSS 2025 Workshop on <a href="https://lfmrss2025.weebly.com/" target="_blank">Large Foundation Model for Interactive Robot Learning</a></b></li> -->
+			
+			<!-- Show more -->
+			<div class="talks" style="display:none">
+				<li>[05/2024] One paper got accepted by ICML. Congrats to Yudong!</li>
+				<!-- <li>[2025/06] Invited Talk at <b> CVPR 2025 Workshop on <a href="https://robomani-grail.github.io/" target="_blank">Generalization in Robotics Manipulation Workshop and Challenges</a></b></li> -->
+				<!-- <li>[2025/06] Invited Talk at <b> CVPR 2025 Workshop on <a href="https://computer-vision-in-the-wild.github.io/cvpr-2025/" target="_blank">Computer Vision in the Wild</a></b></li>
+				<li>[2025/06] Keynote at the <b><a href="https://nems25.github.io/" target="_blank">New England Manipulation Symposium (NEMS)</a></b></li>
+				<li>[2025/05] Guest Lecture at <b><a href="https://cs231n.stanford.edu/2025/" target="_blank">CS231n: Deep Learning for Computer Vision</a></b> at <b>Stanford</b> <a href="https://www.youtube.com/watch?v=XSfmOH_xVSU" target="_blank">[Recording]</a></li>
+				<li>[2025/05] Invited Talk at <b> ICRA 2025 Workshop on <a href="https://deformable-workshop.github.io/icra2025/" target="_blank">Reflections on Representations and Manipulating Deformable Objects</a></b> <a href="https://www.youtube.com/watch?v=Mn4sc1hZCAk" target="_blank">[Recording]</a></li> -->
+				
+			</div>
+
+			<li style="font-size: 16px">
+				<a href="javascript:toggle_vis('talks')" id="showText">[Show more]</a>
+			</li>
+		</ul>
+	</div><br><br>
+
+
+
+	<!-- Publications -->
+	<div class="container">
+		<h3 id="Publications" style="padding-top: 80px; margin-top: -80px;">
+			Selected Publications
+			<small><small>
+			<!-- (<a href="index.html" id="select0" onclick="showPubs(0); return false;">show selected</a>) -->
+			 <!-- <a href="index.html" id="select1" onclick="showPubs(1); return false;">show by date</a>) -->
+       		 <!-- <a href="index.html" id="select2" onclick="showPubs(2); return false;">show by topic</a>) -->
+			</small></small><br>
+
+			<small><small>
+		  	<font color="black">Research Topics:
+				<a href="index.html#manip" onclick="showPubs(2)">Foundation Models for Embodied AI</a> /
+				<a href="index.html#fm" onclick="showPubs(2)">Interpretable ML</a> /
+				<a href="index.html#phys" onclick="showPubs(2)">Safe LLM-based Agents</a> /
+				<!-- <a href="index.html#multi" onclick="showPubs(2)">Multi-Modal Perception</a> -->
+			</font><br>
+			</small></small>
+		</h3>
+
+		<div id="pubs"></div>
+
+		<script id="pubs_selected" language="text">
+			<font color="black">(* indicates equal contribution)</font><br><hr>
+
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="video-container" style="overflow: hidden;">
+						<video class="img_responsive" style="border: 1px solid black; height: 190px; width: 100%; display: block; object-fit: fill" autoplay muted loop webkit-playsinline playsinline>
+							<source src="projects/Westworld/unitree_go.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<div class="col-md-9">
+				<a target="_blank">Yuchen Wang</a>,
+				<a target="_blank">Jiangtao Kong</a>,
+				<a target="_blank">Sizhe Wei</a>,
+				<a target="_blank">Xiaochang Li</a>,
+				<a target="_blank">Haohong Lin</a>, 
+				<a target="_blank">Hongjue Zhao</a>,
+				<a target="_blank">Lu Gan</a>,
+				and
+				<a href="index.html"><b>Huajie Shao</b></a>
+				<br>
+				<b><font color="black">WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems</font></b><br>
+				<b><a href="https://iccv.thecvf.com/Conferences/2025" target="_blank">Under Review 2026</a></b>,
+				<a href="https://westworldrobot.github.io/" target="_blank"> <small>[Project]</small></a>
+				<a href="xxx" target="_blank"> <small>[Paper]</small></a>
+				<a href="xxx" target="_blank"> <small>[Code]</small></a>
+				<br>
+				Abridged in <b>ICLR 2026</b> 2nd Workshop on World Models: Understanding, Modelling and Scaling <a href="https://sites.google.com/view/iclr-2026-workshop-world-model/home" target="_blank"><small>[Link]</small></a>
+				</div>
+			</div><hr>
+
+			
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="projects/ODESteer/animation_odesteer.gif" style="border:1px solid black; height: 180px; width: 100%" alt="">
+				</div>
+				<div class="col-md-9">
+				<a target="_blank">Yixuan Wang</a>*,
+				<a target="_blank">Mingtong Zhang</a>*,
+				<a target="_blank">Zhuoran Li</a>,
+				<a target="_blank">Tarik Kelestemur</a>,
+				<a target="_blank">Katherine Driggs-Campbell</a>,
+				<a target="_blank">Jiajun Wu</a>,
+				<a target="_blank">Li Fei-Fei</a>, and
+				<a href="index.html"><b>Huajie Shao</b></a>
+				<br>
+				<b><font color="black">ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment</font></b><br>
+				<b><a href="xx" target="_blank">ICLR 2026</a></b>,
+				<a href="https://odesteer.github.io/" target="_blank"> <small>[Project]</small></a>
+				<a href="https://odesteer.github.io/pdf/ODESteer.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/ZhaoHongjue/odesteer" target="_blank"> <small>[Code]</small></a>
+				<br>
+				<font color="firebrick"><b>Poster</b></font>
+				</div>
+			</div><hr>
+			
+
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="projects/CausalODE/car.png" style="border:1px solid black; height: 200px; width: 100%; display: block; object-fit: fill" alt="">
+				</div>
+				<div class="col-md-9">
+				<a target="_blank">Zhenyu Zong</a>,
+				<a target="_blank">Yuchen Wang</a>,
+				<a target="_blank">Haohong Lin</a>,
+				<a target="_blank">Lu Gan</a>,
+				and
+				<a href="index.html"><b>Huajie Shao</b></a>
+				<br>
+				<b><font color="black">A Generalizable Physics-guided Causal Model for Trajectory Prediction in Autonomous Driving</font></b><br>
+				<b><a href="https://www.science.org/journal/scirobotics" target="_blank">ICRA 2026</a></b> <br>
+				<a href="https://arxiv.org/abs/2602.13936" target="_blank"> <small>[Paper]</small></a>
+				</div>
+			</div><hr>
+
+
+		</script>
+		</div>
+	<br><br>
+
+	
+	<!-- Service -->
+	<div class="container">
+		<h3 id="Service" style="padding-top: 80px; margin-top: -80px;">Professional Service</h3>
+		<ul>
+			<li>Workshop Organizer</li>
+				<ul>
+					<li><a href="https://fmsys-org.github.io/2025/index.html" target="_blank">Workshop on Foundation Models for Cyber-Physical Systems & Internet of Things (FMSys'25)</a> at CPS-Week</li>
+					<!-- <li><a href="https://swomo-rss.github.io/index.html" target="_blank">Structured World Models for Robotic Manipulation</a> at RSS 2025</li>
+					<li><a href="https://sairlab.org/icra25/" target="_blank">Foundation Models and Neuro-Symbolic AI for Robotics</a> at ICRA 2025</li>
+					<li><a href="https://agiworkshop.github.io/" target="_blank">How Far Are We From AGI?</a> at ICLR 2024</li>
+					<li><a href="https://imrss2022.github.io/" target="_blank">Implicit Representations for Robotic Manipulation</a> at RSS 2022</li>
+					<li><a href="https://www.mair2.com/" target="_blank">Multi-Agent Interaction and Relational Reasoning</a> at ICCV 2021</li>
+					<li><a href="https://www.visionmeetscognition.org/" target="_blank">Vision Meets Cognition</a> at CVPR 2019</li> -->
+				</ul>
+			<!-- <li>Tutorial Organizer</li>
+				<ul>
+					<li><a href="https://foundation-models-meet-embodied-agents.github.io/aaai2025/" target="_blank">Foundation Models Meet Embodied Agents</a> at AAAI 2025, NAACL 2025, ICCV 2025</li>
+					<li><a href="https://xiaolonw.github.io/graphnnv3/" target="_blank">Learning Representations via Graph-structured Networks</a> at CVPR 2021</li>
+					<li><a href="https://bryanyzhu.github.io/mm-iccv2021/" target="_blank">Multi-Modality Learning from Videos and Beyond</a> at ICCV 2021</li>
+				</ul> -->
+			<li>Area Chair: ACL, ICLR, EMLP</li>
+			<li>Associate Editor: <a href="https://dl.acm.org/journal/health" target="_blank">ACM Trans. on Computing for Healthcare</a></li>
+			<!-- <li>Program Committee Member: AAAI</li> -->
+			<li>Conference Reviewer: ICLR, ICML, NeurIPS, ICCV, CVPR, KDD</li>
+			<li>Program Committee Member: AAAI, ICCPS</li>
+			<!-- <li>Journal Reviewer:
+				<a href="https://www.science.org/" target="_blank">Science</a>,
+				<a href="https://www.nature.com/natelectron/" target="_blank">Nature Electronics</a>,
+				<a href="https://www.science.org/journal/scirobotics" target="_blank">Science Robotics</a>,
+				<a href="https://www.nature.com/ncomms/" target="_blank">Nature Communications</a>,
+				<a href="https://www.computer.org/csdl/journal/tp" target="_blank">TPAMI</a>,
+				<a href="https://www.springer.com/journal/11263" target="_blank">IJCV</a>,
+				<a href="https://journals.sagepub.com/home/ijr" target="_blank">IJRR</a>,
+				<a href="https://www.ieee-ras.org/publications/t-ro" target="_blank">IEEE T-RO</a>,
+				<a href="https://www.ieee-ras.org/publications/ra-l" target="_blank">IEEE RA-L</a>,
+				<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42" target="_blank">IEEE-TMI</a>,
+				<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank">IEEE T-ITS</a>,
+				<a href="https://ieeeaccess.ieee.org/" target="_blank">IEEE Access</a>,
+				<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4543165" target="_blank">IEEE-ToH</a>
+			</li>
+		</ul> -->
+	</div>
+
+	<div class="container">
+		<hr>
+		<center>
+			<footer>
+				<p>&copy; Acknowledgement: Yunzhu Li at Columbia University 2025</p>
+			</footer>
+		</center>
+	</div>
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script>showPubs(0);</script>
+	<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
-</html>
 
+</html>
